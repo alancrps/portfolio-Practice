@@ -1,0 +1,255 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400|Fjalla+One:400');
+
+/* Variables */
+:root {
+    /* primary color*/
+    --primary-color: #66FCF1;
+
+    /* grey */
+    --grey-50: #fafafa;
+    --grey-100: #f4f4f5;
+    --grey-200: #e4e4e7;
+    --grey-300: #d4d4d8;
+    --grey-400: #a1a1aa;
+    --grey-500: #71717a;
+    --grey-600: #52525b;
+    --grey-700: #3f3f46;
+    --grey-800: #27272a;
+    --grey-900: #18181b;
+
+    /* Rest of the colors */
+    --black: #141010;
+    --white: #fff;
+    --red-light: #f8d7da;
+    --red-dark: #842029;
+    --green-light: #d1e7dd;
+    --green-dark: #0f5132;
+    --c-body: #1F2833;
+    --c-dark: #45a29e;
+
+    /* Fonts */
+    --headFont: 'Cantarell', sans-serif;
+    --bodyFont: 'Fjalla One', sans-serif;
+    /* More variables */
+    --backgroundColor: "";
+    --textColor: #c5c6c7;
+    --transition: 0.3s ease-in-out all;
+    --transition2: all .6 cubic-bezier(.165, .84, .44, 1);
+    --shadow: 0px 15px 40px rgba(0, 0, 0, 1);
+
+}
+
+/* Resets */
+
+body {
+    background-color: var(--c-body);
+    font-family: var(--bodyFont);
+    color: var(--textColor);
+    line-height: 1.7;
+}
+
+h1, .h1, h2, .h2, h3, .h3 h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 700;
+    color: var(--textColor);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    transition: var(--transition2);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+img {
+    width: 100%;
+}
+
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.text-brand {
+    color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#navbar {
+    background-color: #2d3849;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28102, 252, 241, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 1px solid var(--c-dark);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    color: var(--c-dark);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+}
+
+.social-icon:hover {
+    background-color: transparent;
+}
+
+/* Button */
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 0;
+    border-width: 2px;
+    font-weight: 500;
+}
+
+.btn-brand, .btn-brand:focus {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.btn-brand:hover {
+    background-color: var(--primary-color);
+    color: var(--c-body);
+    border-color: var(--primary-color);
+}
+
+
+/* Home */
+
+
+#home {
+    background-image: url(../assets/Home.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* About me */
+.section-title {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 60px auto;
+    letter-spacing: 1px;
+    line-height: 2rem
+}
+
+
+
+.section-title h1 {
+    padding-bottom: 15px;
+}
+
+.section-title .line {
+    width: 125px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: inline-block;
+}
+
+/* Projects */
+
+.project {
+    overflow: hidden;
+    position: relative;
+}
+
+.project .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img, .project .content {
+    transition: var(--transition);
+
+}
+
+.project img {
+    filter: blur(2px);
+}
+
+.project:hover .content {
+    top: 0;
+}
+
+#contact .form-control {
+    border-radius: 0;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2d3849;
+    padding-top: 50px;
+}
+
+footer h4 {
+    color: var(--white);
+}
+
+footer p,
+footer li,
+footer li a {
+    color: var(--grey-400);
+}
+
+footer li {
+    list-style: none;
+    padding: 0;
+}
