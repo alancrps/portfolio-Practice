@@ -187,7 +187,7 @@ img {
     display: inline-block;
 }
 
-/* Projects */
+/* Projects section */
 
 .project {
     overflow: hidden;
@@ -219,6 +219,174 @@ img {
     top: 0;
 }
 
+/* skills section */
+.progress-icon {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.bar-title {
+    color: var(--c-dark);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.bar-title span {
+    float: right;
+    padding-bottom: 4px;
+}
+
+.bar {
+    height: 6px;
+    background: var(--white);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.row ul li {
+    padding: 10px 30px;
+    list-style: none;
+}
+
+.bar span {
+    height: 6px;
+    float: left;
+    border-radius: 5px;
+}
+
+.html-bar {
+    background: var(--primary-color);
+    width: 100%;
+    animation: html-bar 3s;
+}
+
+@keyframes html-bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.css-bar {
+    background: var(--primary-color);
+    width: 80%;
+    animation: css-bar 3s;
+}
+
+@keyframes css-bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.js-bar {
+    background: var(--primary-color);
+    width: 50%;
+    animation: js-bar 3s;
+}
+
+@keyframes js-bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.bootstrap-bar {
+    background: var(--primary-color);
+    width: 70%;
+    animation: bootstrap-bar 3s;
+}
+
+@keyframes bootstrap-bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.angular-bar {
+    background: var(--primary-color);
+    width: 0%;
+    animation: angular-bar 3s;
+}
+
+@keyframes angular-bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+.java-bar {
+    background: var(--primary-color);
+    width: 50%;
+    animation: java-bar 3s;
+}
+
+@keyframes java-bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+/* .skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+}
+
+.skills .progress .skill {
+    padding: 20px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.skills .progress .skill .value {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: var(--white);
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    background-color: var(--primary-color);
+}
+ */
+
+
+
+
+/* contact section */
 #contact .form-control {
     border-radius: 0;
 }
