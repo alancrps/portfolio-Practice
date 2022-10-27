@@ -174,8 +174,6 @@ img {
     line-height: 2rem
 }
 
-
-
 .section-title h1 {
     padding-bottom: 15px;
 }
@@ -185,6 +183,35 @@ img {
     height: 2px;
     background-color: var(--primary-color);
     display: inline-block;
+}
+
+.education-title {
+    padding-bottom: 20px;
+}
+
+.education-contents {
+    padding: 0px 30px;
+    border-left: 2px solid var(--c-dark);
+
+}
+
+.education-content {
+    position: relative;
+    padding: 20px;
+    background-color: #2d3849;
+    border: 1px solid var(--c-dark);
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.education-content:hover {
+    box-shadow: 0px 3px 12px 0px var(--primary-color);
+    border: 1px solid transparent;
+}
+
+.education-content h4 {
+    color: var(--primary-color);
+    position: relative;
 }
 
 /* Projects section */
@@ -351,40 +378,6 @@ img {
         width: 50%;
     }
 }
-
-/* .skills .progress {
-    height: 60px;
-    display: block;
-    background: none;
-}
-
-.skills .progress .skill {
-    padding: 20px 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 500;
-    color: var(--primary-color);
-}
-
-.skills .progress .skill .value {
-    float: right;
-    font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-    background: var(--white);
-}
-
-.skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    background-color: var(--primary-color);
-}
- */
-
-
-
 
 /* contact section */
 #contact .form-control {
